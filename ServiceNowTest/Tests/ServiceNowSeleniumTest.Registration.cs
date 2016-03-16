@@ -61,7 +61,7 @@ namespace ServiceNowTest
             GurukulaRegistrationPage registration = new GurukulaRegistrationPage(this.driver);
             registration.Navigate();
 
-            //When fills the form and clicks on the Register botton
+            //When the user does not fill the form completly
             var timeStamp = Helper.GetTimestamp();
             registration.NoFilledRegistration(Properties.TestData.NewUser + timeStamp);
 
